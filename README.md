@@ -62,39 +62,15 @@ Small medical shops need a simple, dependable system that works even when intern
 
 ---
 
-## 📁 Project folder structure
-
-```
-project-root/
-├── backend/                     # Django project, apps, migrations
-# 🏥 Medical Store Inventory & Billing Management System
-
-A desktop-focused, offline-first medical store billing and inventory system built with Django, React, and Electron. Designed for single-shop operators who need reliable local billing without internet dependency.
-
-## 📌 Overview
-
-This system provides:
-
-- Local billing & invoice printing
-- Batch-based inventory tracking
-- Expiry management
-- Purchase tracking
-- Shop configuration management
-
-Tech stack:
-
-- Django (Backend API & business logic)
-- React (Frontend UI)
-- Electron (Desktop wrapper)
-- SQLite (Local database)
-
-The application is designed to run fully on a local machine without internet access.
-
 ## 🏗 Architecture (Current Implementation)
 
+```bash
 Electron → Django Server (127.0.0.1:8000) → SQLite (local file)
+```
 
 Django serves both API and the built frontend. No cloud dependency.
+
+---
 
 ## 🖥 System Requirements
 
@@ -107,9 +83,10 @@ Before running, install:
 3. Git (recommended) — https://git-scm.com/
 	- Verify: `git --version`
 
+---
 ## 📁 Project Structure
 
-```
+```bash
 medical-store-inventory-system/
 ├── backend/            # Django backend
 ├── frontend/           # React source code
@@ -117,6 +94,8 @@ medical-store-inventory-system/
 ├── DOCUMENTATION_AND_GUIDES/
 └── README.md
 ```
+
+---
 
 ## 🚀 How To Run (Development / Local Desktop Mode)
 
